@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational mobile experience with best practices">
+    <title>Ivory Tower Down</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--    Delete style below-->
+    <style>
+        @media (max-width: 480px) {
+            body {
+                font-size: 1.3rem !important;
+            }
+
+            .text-bubble {
+                font-size: 1.3rem !important;
+            }
+
+            .small-text {
+                font-size: 1.3rem !important;
+            }
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="app-container" id="app">
+    <!-- Progress bar -->
+    <div class="progress" id="progressBar"></div>
+
+
+    <!-- Page 1 -->
+    <section class="page page-1" id="page1" aria-label="Introduction">
+
+        <div class="content">
+            <h2>Socrates was sentenced to death… for asking too many questions.</h2>
+            <div class="image-container">
+                <img src="./images/1-1.png" alt="Professor John Smith">
+            </div>
+
+            <!--            <div class="card" style="padding: 15px 0 0" tabindex="0" onclick="addRipple(event)">-->
+            <!--            </div>-->
+            <!--            Swipe Up Message-->
+            <!--            <div class="swipe-indicator">-->
+            <!--                <i class="fas fa-chevron-up" aria-hidden="true"></i>-->
+            <!--                <p class="small-text">Swipe up to continue</p>-->
+            <!--            </div>-->
+        </div>
+            <div class="nav-container">
+                <!--            <div></div> &lt;!&ndash; Spacer for alignment &ndash;&gt;-->
+                <button class="nav-button" onclick="navigateToPage(2)" aria-label="Go to next page">
+                    Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                      aria-label="Page 2"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                      aria-label="Page 3"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                      aria-label="Page 4"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                      aria-label="Page 5"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                      aria-label="Page 6"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                      aria-label="Page 7"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                      aria-label="Page 8"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                      aria-label="Page 9"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                      aria-label="Page 10"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                      aria-label="Page 11"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                      aria-label="Page 12"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                      aria-label="Page 13"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                      aria-label="Page 14"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                      aria-label="Page 15"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                      aria-label="Page 16"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                      aria-label="Page 17"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                      aria-label="Page 18"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                      aria-label="Page 19"></span>
+            </div>
+
+    </section>
+
+    <!-- Page 2 -->
+    <section class="page page-2" id="page2" aria-label="About">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles">
+                    <div class="text-bubble">
+                        So Socrates said "The unexamined life is not worth living."
+                    </div>
+                    <div class="text-bubble">
+                        That's a heavy statement from a guy who was sentenced to die by drinking poison.
+                    </div>
+                    <div class="text-bubble">
+                        But I think he was onto something... ya know, before the poison.
+                    </div>
+                </div>
+                <!-- Thought bubble dots between bubbles and character -->
+                <div class="connector">
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                </div>
+                <div class="character-wrapper">
+                    <img src="/images/1-2.jpg" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(1)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section class="page page-3" id="page3" aria-label="Quiz">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles" style="width: auto; padding: 20px">
+                    <div class="text-bubble">I used to question things.
+                    </div>
+                    <div class="text-bubble">I still do, but I used to, too.
+                    </div>
+                </div>
+                <!-- Connector dots between bubbles and character -->
+                <div class="connector" style=" align-items: flex-start; margin-right: 40px;">
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                </div>
+
+                <div class="character-wrapper">
+                    <img src="/images/1-3.jpg" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(2)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(4)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+
+    </section>
+
+    <!-- Page 4 -->
+    <section class="page page-4" id="page4" aria-label="Features">
+        <div class="content">
+            <h2>Socrates believed that not questioning your beliefs is dangerous.
+            </h2>
+            <div class="card" tabindex="0" onclick="addRipple(event)">
+                <!--                <h4></h4>-->
+                <p class="small-text">Because if you don’t think for yourself, someone else will do it for you.</p>
+            </div>
+        </div>
+
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(5)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+
+    </section>
+
+    <!-- Page 5 -->
+    <section class="page page-5" id="page5" aria-label="Contact">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles">
+                    <div class="text-bubble">
+                        Questioning stuff is like a mental broom for your brain.
+                    </div>
+                    <div class="text-bubble">
+                        You sweep away all the assumptions just lying around.
+                    </div>
+                </div>
+
+                <div class="connector">
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                </div>
+
+                <div class="character-wrapper">
+                    <img src="/images/1-5.png" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+
+            <button class="nav-button" onclick="navigateToPage(6)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 6 -->
+    <section class="page page-6" id="page6" aria-label="Features">
+        <div class="content">
+            <h2 style="color: #413373">The Socratic Method in 10 Seconds</h2>
+            <ul class="steps">
+                <li class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Ask a question.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Get an answer.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Ask why.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">Watch them struggle.</div>
+                </li>
+                <li class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-text">Keep asking why until their brain reboots.</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(7)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 7 -->
+    <section class="page page-7" id="page7" aria-label="Features">
+        <div class="content">
+            <h2>Socrates didn’t just ask random stuff.</h2>
+            <div class="character-wrapper">
+                <img src="/images/1-7.jpg" alt="Character" class="character-image">
+            </div>
+            <div class="card" tabindex="0" onclick="addRipple(event)">
+                <!--                <h4></h4>-->
+                <p class="small-text">He exposed contradictions in people’s thinking.</p>
+            </div>
+
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(8)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 8 -->
+    <section class="page page-8" id="page8" aria-label="Features">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles">
+                    <div class="text-bubble">
+                        Like, you start simple: 'Why does coffee taste better in mugs?'
+                    </div>
+                    <div class="text-bubble">
+                        Then, ‘Why do I even drink coffee?’
+                    </div>
+                </div>
+                <div class="character-wrapper">
+                    <img src="/images/1-8.jpg" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(9)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 9 -->
+    <section class="page page-9" id="page9" aria-label="Features">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles">
+                    <div class="text-bubble">
+                        Then, ‘Wait, If I only need this for
+                        work, do I really need to work anymore?’
+                    </div>
+                    <div class="text-bubble">
+                        Next thing you know, you’re barefoot in the woods, questioning why we can’t pay for things by
+                        high-fiving.
+                    </div>
+                </div>
+                <div class="character-wrapper">
+                    <img src="/images/1-9.jpg" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(10)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 10 -->
+    <section class="page page-10" id="page10" aria-label="Features">
+        <div class="content">
+
+            <div class="card" tabindex="0" onclick="addRipple(event)">
+                <h2>Every question leads to another question.</h2>
+            </div>
+            <p class="small-text">And that’s how you start examining your life. <br/><br/>
+            </p>
+            <div class="character-wrapper">
+                <img src="/images/1-10.jpg" alt="Character" class="character-image">
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(11)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 11 -->
+    <section class="page page-11" id="page11" aria-label="Features">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles">
+                    <div class="text-bubble">
+                        Students ask me, "Isn't it exhausting to question everything?"
+                    </div>
+                    <div class="text-bubble">
+                        Yeah, but not questioning is like eating at a buffet without checking what's in the trays.
+                    </div>
+                    <div class="text-bubble">
+                        Sure, it might be fine... but what if that's not chicken?
+                    </div>
+                </div>
+                <div class="connector">
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                    <div class="thought-dot"></div>
+                </div>
+                <div class="character-wrapper">
+                    <!-- Replace the src with your actual image path -->
+                    <img src="/images/1-11a.jpg" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(12)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 12 -->
+    <section class="page page-12" id="page12" aria-label="Features">
+        <div class="content">
+            <h2>Quick quiz: What's the Socratic Method?</h2>
+            <div class="quiz-container" role="form">
+                <div class="quiz-options" role="radiogroup" aria-labelledby="quiz-title">
+                    <div class="quiz-option" tabindex="0" role="radio" onclick="answerQuiz('A')">
+                        A) A cleaning product
+                    </div>
+                    <div class="quiz-option" tabindex="0" role="radio" onclick="answerQuiz('B')">
+                        B) A diet plan
+                    </div>
+                    <div class="quiz-option" tabindex="0" role="radio" onclick="answerQuiz('C')">
+                        C) Asking questions to find truth
+                    </div>
+                    <div class="quiz-option" tabindex="0" role="radio" onclick="answerQuiz('D')">
+                        D) Socrates' workout routine
+                    </div>
+                </div>
+
+                <div class="quiz-feedback" id="quizFeedback"></div>
+            </div>
+        </div>
+
+        <div class="nav-container">
+                <!--      <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to previous page">-->
+                <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+                <!--      </button>-->
+                <button class="nav-button" onclick="navigateToPage(13)" aria-label="Go to next page">
+                    Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                      aria-label="Page 2"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                      aria-label="Page 3"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                      aria-label="Page 4"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                      aria-label="Page 5"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                      aria-label="Page 6"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                      aria-label="Page 7"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                      aria-label="Page 8"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                      aria-label="Page 9"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                      aria-label="Page 10"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                      aria-label="Page 11"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                      aria-label="Page 12"></span>
+                <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(13)"
+                      aria-label="Page 13"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                      aria-label="Page 14"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                      aria-label="Page 15"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                      aria-label="Page 16"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                      aria-label="Page 17"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                      aria-label="Page 18"></span>
+                <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                      aria-label="Page 19"></span>
+            </div>
+    </section>
+
+    <!-- Page 13 -->
+    <section class="page page-13" id="page13" aria-label="Features">
+        <div class="content">
+            <h2>Socrates challenged Athenians to think for themselves and question accepted truths.
+            </h2>
+            <div class="card" tabindex="0" onclick="addRipple(event)">
+                <p class="small-text"> His critical thinking was so threatening that the powerful sentenced him
+                    to death by poison.</p>
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(14)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 14 -->
+    <section class="page page-14" id="page14" aria-label="Features">
+        <div class="content">
+            <h2 class="socr_title">The Trial of Socrates</h2>
+            <ul class="socr_charges">
+                <li class="socr_charge_item">
+                    <span class="socr_ban_icon">🚫</span>
+                    <div>
+                        <span class="socr_charge_text">Corrupting the youth</span>
+                        <span class="socr_translation">(Translation: Teaching them to think)</span>
+                    </div>
+                </li>
+
+                <li class="socr_charge_item">
+                    <span class="socr_ban_icon">🚫</span>
+                    <div>
+                        <span class="socr_charge_text">Denying the gods</span>
+                        <span class="socr_translation">(Translation: Questioning authority)</span>
+                    </div>
+                </li>
+
+                <li class="socr_charge_item">
+                    <span class="socr_ban_icon">🚫</span>
+                    <div>
+                        <span class="socr_charge_text">Being annoying</span>
+                        <span class="socr_translation">(Translation: Being Socrates)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(15)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 15 -->
+    <section class="page page-15" id="page15" aria-label="Features">
+        <div class="content">
+            <div class="image-text-container">
+                <div class="thought-bubbles">
+                    <div class="text-bubble">
+                        If Socrates were alive today, he'd probably get banned from every platform.
+                    </div>
+                    <div class="text-bubble">
+                        But he'd have the best comments section.
+                    </div>
+                </div>
+                <div class="character-wrapper">
+                    <img src="/images/1-15a.jpg" alt="Character" class="character-image">
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(16)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 16 -->
+    <section class="page page-16" id="page16" aria-label="Features">
+        <div class="content">
+            <div class="card" style="padding:10px; margin: 8px;" tabindex="0" onclick="addRipple(event)">
+                <p class="small-text">The cool thing about questioning everything is you start
+                    seeing the world differently.</p>
+            </div>
+            <div class="card" style="padding:10px; margin: 8px;" tabindex="0" onclick="addRipple(event)">
+                <p class="small-text">Like, why do we park on driveways and drive on parkways? </p>
+            </div>
+            <div class="card" style="padding:10px; margin: 8px;" tabindex="0" onclick="addRipple(event)">
+                <p class="small-text">Why do we call them apartments when they're all stuck
+                    together? </p>
+            </div>
+            <div style="margin-top: 10px" class="character-wrapper">
+                <img src="/images/1-16.jpg" alt="Character" class="character-image">
+            </div>
+        </div>
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(17)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 17 -->
+    <section class="page page-17" id="page17" aria-label="Features">
+        <div class="content">
+            <h2 class="socratic-quiz-title">You can use the Socratic Method to:</h2>
+            <p class="small-text" style="text-align: left">Select all that apply</p>
+            <ul class="socratic-quiz-options">
+                <li class="socratic-quiz-option" onclick="selectOption(this, true, 0)">
+                    Win debates without yelling
+                    <div class="socratic-quiz-icon socratic-quiz-correct-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </li>
+                <li class="socratic-quiz-option" onclick="selectOption(this, true, 1)">
+                    Avoid being manipulated
+                    <div class="socratic-quiz-icon socratic-quiz-correct-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </li>
+                <li class="socratic-quiz-option" onclick="selectOption(this, true, 2)">
+                    Impress job interviewers
+                    <div class="socratic-quiz-icon socratic-quiz-correct-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </li>
+                <li class="socratic-quiz-option" onclick="selectOption(this, false, 3)">
+                    Argue with your grandma (she will win)
+                    <div class="socratic-quiz-icon socratic-quiz-incorrect-icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(18)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 18 -->
+    <section class="page page-18" id="page18" aria-label="Features">
+        <div class="content">
+
+            <div class="thought-bubbles">
+                <div class="text-bubble">
+                    <h2>If you never question your beliefs, are they truly your own?
+                    </h2>
+                </div>
+            </div>
+            <div class="image-container" style="margin-top: 15px">
+                <img src="./images/1-18.jpg" alt="Socrates by a vending machine">
+            </div>
+        </div>
+        <div class="nav-container">
+            <!--      <button class="nav-button" onclick="navigateToPage(3)" aria-label="Go to previous page">-->
+            <!--        <i class="fas fa-chevron-left" aria-hidden="true"></i> Back-->
+            <!--      </button>-->
+            <button class="nav-button" onclick="navigateToPage(19)" aria-label="Go to next page">
+                Next <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+    <!-- Page 19 -->
+    <section class="page page-19" id="page19" aria-label="Features">
+
+        <div class="content">
+            <h3>Socrates didn't give answers.
+                <br/>He gave us a way to think.
+            </h3>
+            <div class="card" tabindex="0" onclick="addRipple(event)">
+                <!--                <h4></h4>-->
+                <p class="small-text" style="margin-bottom: 0;">Now it's your turn: What belief have you never
+                    questioned... but should?
+                </p></div>
+
+            <div class="image-container">
+                <img src="./images/1-19.jpg" alt="Socrates by a vending machine">
+            </div>
+
+            <!--            Mobile-->
+
+            <div class="refresh-container">
+                <button onclick="window.location.reload();" class="refresh-button">Refresh Page</button>
+            </div>
+
+        </div>
+
+        <!--        Larger screen navigation-->
+        <div class="nav-container">
+            <button class="nav-button" onclick="navigateToPage(1)" aria-label="Return to start">
+                Restart <i class="fas fa-redo" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="page-indicator" role="tablist" aria-label="Page navigation">
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(1)"
+                  aria-label="Page 1"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(2)"
+                  aria-label="Page 2"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(3)"
+                  aria-label="Page 3"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(4)"
+                  aria-label="Page 4"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(5)"
+                  aria-label="Page 5"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(6)"
+                  aria-label="Page 6"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(7)"
+                  aria-label="Page 7"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(8)"
+                  aria-label="Page 8"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(9)"
+                  aria-label="Page 9"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(10)"
+                  aria-label="Page 10"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(11)"
+                  aria-label="Page 11"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(12)"
+                  aria-label="Page 12"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(13)"
+                  aria-label="Page 13"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(14)"
+                  aria-label="Page 14"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(15)"
+                  aria-label="Page 15"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(16)"
+                  aria-label="Page 16"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(17)"
+                  aria-label="Page 17"></span>
+            <span class="dot" tabindex="0" role="tab" aria-selected="false" onclick="navigateToPage(18)"
+                  aria-label="Page 18"></span>
+            <span class="dot active" tabindex="0" role="tab" aria-selected="true" onclick="navigateToPage(19)"
+                  aria-label="Page 19"></span>
+        </div>
+    </section>
+
+
+</div>
+
+<script>
+    // Current page tracker
+    let currentPage = 1;
+    const totalPages = 19;
+    let startY, endY;
+    let isLoading = false;
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function () {
+        updateProgressBar();
+        setupSwipeListeners();
+        setupKeyboardNavigation();
+
+        // Show initial loading skeleton for a realistic experience
+        simulateLoading(function () {
+            document.getElementById('page1').style.opacity = '1';
+        });
+    });
+
+    // Navigate to page
+    function navigateToPage(pageNumber) {
+        if (pageNumber === currentPage || isLoading) return;
+
+        isLoading = true;
+
+        // Determine direction
+        const direction = pageNumber > currentPage ? 1 : -1;
+
+        // Update current page element
+        const currentPageEl = document.getElementById(`page${currentPage}`);
+        currentPageEl.style.transform = direction > 0 ? 'translateY(-100%)' : 'translateY(100%)';
+        currentPageEl.setAttribute('aria-hidden', 'true');
+
+        // Update target page element
+        const targetPage = document.getElementById(`page${pageNumber}`);
+        targetPage.style.opacity = '0';
+        targetPage.style.transform = 'translateY(0)';
+        targetPage.removeAttribute('aria-hidden');
+
+        // Update indicators
+        updateIndicators(pageNumber);
+
+        // Update current page tracker
+        currentPage = pageNumber;
+
+        // Update progress bar
+        updateProgressBar();
+
+        // Simulate loading for a more realistic feel
+        simulateLoading(function () {
+            targetPage.style.opacity = '1';
+            isLoading = false;
+        });
+
+        // Announce page change for screen readers
+        announcePageChange(pageNumber);
+    }
+
+    // Update indicators
+    function updateIndicators(pageNumber) {
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            if (index + 1 === pageNumber) {
+                dot.classList.add('active');
+                dot.setAttribute('aria-selected', 'true');
+            } else {
+                dot.classList.remove('active');
+                dot.setAttribute('aria-selected', 'false');
+            }
+        });
+    }
+
+    // Update progress bar
+    function updateProgressBar() {
+        const progress = ((currentPage - 1) / (totalPages - 1)) * 100;
+        document.getElementById('progressBar').style.width = `${progress}%`;
+    }
+
+    // Setup swipe listeners
+    function setupSwipeListeners() {
+        const container = document.querySelector('.app-container');
+
+        // Touch events for mobile
+        container.addEventListener('touchstart', function (e) {
+            startY = e.touches[0].clientY;
+        }, {passive: true});
+
+        container.addEventListener('touchmove', function (e) {
+            if (!startY || isLoading) return;
+            endY = e.touches[0].clientY;
+        }, {passive: true});
+
+        container.addEventListener('touchend', function (e) {
+            if (!startY || !endY || isLoading) return;
+
+            const diffY = startY - endY;
+
+            // Only trigger if swipe is significant
+            if (Math.abs(diffY) > 50) {
+                // Swipe up - next page
+                if (diffY > 0 && currentPage < totalPages) {
+                    navigateToPage(currentPage + 1);
+                }
+                // Swipe down - previous page
+                else if (diffY < 0 && currentPage > 1) {
+                    navigateToPage(currentPage - 1);
+                }
+            }
+
+            startY = null;
+            endY = null;
+        }, {passive: true});
+    }
+
+    // Setup keyboard navigation
+    function setupKeyboardNavigation() {
+        document.addEventListener('keydown', function (e) {
+            if (isLoading) return;
+
+            if (e.key === 'ArrowDown' && currentPage < totalPages) {
+                navigateToPage(currentPage + 1);
+            } else if (e.key === 'ArrowUp' && currentPage > 1) {
+                navigateToPage(currentPage - 1);
+            }
+        });
+    }
+
+    // Simulate loading
+    function simulateLoading(callback) {
+        setTimeout(callback, 300);
+    }
+
+    // Quiz functionality
+    function answerQuiz(option) {
+        const feedback = document.getElementById('quizFeedback');
+
+        if (option === 'C') {
+            feedback.textContent = "Nice! But wouldn't D be more interesting?";
+        } else {
+            feedback.textContent = "It's C, but wouldn't D be more interesting?";
+        }
+
+        feedback.classList.add('visible');
+
+        // Visual feedback for selection
+        const options = document.querySelectorAll('.quiz-option');
+        options.forEach(opt => {
+            opt.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+            opt.setAttribute('aria-selected', 'false');
+        });
+
+        // Highlight selected option
+        const selectedOption = document.querySelector(`.quiz-option:nth-child(${getOptionIndex(option)})`);
+        selectedOption.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+        selectedOption.setAttribute('aria-selected', 'true');
+    }
+
+    function getOptionIndex(option) {
+        return option === 'A' ? 1 : option === 'B' ? 2 : option === 'C' ? 3 : 4;
+    }
+
+    // Visual ripple effect for touch
+    function addRipple(event) {
+        const target = event.currentTarget;
+        const rect = target.getBoundingClientRect();
+
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        const ripple = document.createElement('span');
+        ripple.classList.add('touch-ripple');
+        ripple.style.left = `${x}px`;
+        ripple.style.top = `${y}px`;
+
+        target.appendChild(ripple);
+
+        setTimeout(() => {
+            ripple.remove();
+        }, 600);
+    }
+
+    // Accessibility
+    function announcePageChange(pageNumber) {
+        // Create an element for screen readers
+        let announcer = document.getElementById('page-announcer');
+        if (!announcer) {
+            announcer = document.createElement('div');
+            announcer.id = 'page-announcer';
+            announcer.setAttribute('aria-live', 'polite');
+            announcer.setAttribute('class', 'sr-only');
+            document.body.appendChild(announcer);
+        }
+
+        // Announce the page change
+        announcer.textContent = `Page ${pageNumber} of ${totalPages}`;
+    }
+
+    // Quiz - Select All That Apply
+    const selectedOptions = [false, false, false, false];
+
+    function selectOption(element, isCorrect, index) {
+        // Toggle the selected state
+        selectedOptions[index] = !selectedOptions[index];
+
+        // Update the visual state based on selection
+        if (selectedOptions[index]) {
+            if (isCorrect) {
+                element.classList.add('correct');
+            } else {
+                element.classList.add('incorrect');
+            }
+        } else {
+            // If unselecting, remove the classes
+            element.classList.remove('correct', 'incorrect');
+        }
+    }
+</script>
+</body>
+</html>
