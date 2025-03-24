@@ -1,0 +1,1 @@
+import{g as n}from"./storage.C9RQEC1c.js";const e=async()=>{try{const t=await n(),a=document.getElementById("xp-value");a&&(a.textContent=t.xp.toString())}catch(t){console.error("Error updating XP display:",t)}};document.addEventListener("DOMContentLoaded",async()=>{await e(),window.addEventListener("xp-updated",e),setInterval(e,5e3)});
